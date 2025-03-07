@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0FLEEV9X9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-K0FLEEV9X9');
+  </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description"
+    content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries." />
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Jay Patel's Portfolio">
+  <meta itemprop="description"
+    content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+  <meta itemprop="image" content="assets/images/sharing-card.png">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://loquacious-jelly-3b8b31.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jay Patel's Portfolio">
+  <meta property="og:description"
+    content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+  <meta property="og:image" content="assets/images/sharing-card.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jay Patel's Portfolio">
+  <meta name="twitter:description"
+    content="Welcome to my portfolio website. I am a full-stack web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+  <meta name="twitter:image" content="assets/images/sharing-card.png">
+
+  <link rel="shortcut icon" href="assets/images/favicons.png" type="image/png" />
+
+  <!-- Preloading fonts for better performance -->
+
+  <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+
+  <title>Jay Patel's Portfolio</title>
+</head>
+
+<body>
+
+  <script>
+    const theme = localStorage.getItem("theme") || "dark";
+    document.body.classList.add(theme);
+  </script>
+
+  <header class="header">
+
+    <div class="menu-btn-container">
+      <div class="container">
+        <button type="button" class="menu-btn">menu</button>
+      </div>
+    </div>
+
+    <nav class="nav hidden">
+      <ol class="nav-items">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#work">My Work</a></li>
+        <!-- <li class="nav-item"><a href="#blog">See Blog</a></li> -->
+        <li class="nav-item"><a href="#skills">My Skills</a></li>
+        <li class="nav-item">
+          <a href="#contact" data-focused="last-focused">Contact</a>
+        </li>
+      </ol>
+    </nav>
+
+    <div class="container">
+      <div class="header-textbox">
+        <h1 class="h1">
+          <span id="element"></span>
+        </h1>
+
+        <p class="header-text">
+          A full stack web developer who builds UX rich accessible and performant websites.
+        </p>
+
+        <div class="header-btns">
+          <a href="#contact" class="btn btn-cta">Hire me</a>
+          <a href="#work" class="btn btn-secondary">See my work</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="work">
+      <div class="container">
+        <h2 class="h2" id="work">Selected Work</h2>
+        <div class="work-boxes">
+          <div class="work-box">
+            <div class="work-textbox">
+              <h3 class="h3">Portfolio</h3>
+              <p class="work-text">
+                A clean, minimal and accessible portfolio to showcase my work.
+              </p>
+
+              <ol class="work-technologies">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>Javascript</li>
+                <li>php</li>
+              </ol>
+
+              <div class="work-links">
+                <a href="https://jaypatel.solutions" target="_blank" rel="noopener" class="link">Live</a>
+
+                <a href="https://github.com/Jayy0906" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/portfolio-template.webp" alt="agency elevation" />
+            </picture>
+          </div>
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <h3 class="h3">Digital Marketing Agency</h3>
+              <p class="work-text">
+                Boost Your Brand, Digitally Perfected! </p>
+
+              <ol class="work-technologies">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>Javascript</li>
+                <li>php</li>
+              </ol>
+
+              <div class="work-links">
+                <a href="https://digicley.com" target="_blank" rel="noopener" class="link">Live</a>
+
+                <a href="https://github.com/Jayy0906" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/Digicley.webp" alt="Portfolio" />
+            </picture>
+          </div>
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <h3 class="h3">Expense Tracker</h3>
+              <p class="work-text">
+                Smart spending starts with smart tracking—manage, save, and grow! </p>
+
+              <ol class="work-technologies">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>Reactjs</li>
+              </ol>
+
+              <div class="work-links">
+                <a href="https://expense-tracker-reactjs-omega.vercel.app" target="_blank" rel="noopener" class="link">Live</a>
+
+                <a href="https://github.com/Jayy0906/Expense-Tracker-reactjs" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/expense-tracker.webp" alt="Expense Tracker" />
+            </picture>
+          </div>
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <h3 class="h3">Personal Blog - CRUD Operation</h3>
+              <p class="work-text">
+                Unlocking Ideas, One Post at a Time!</p>
+
+              <ol class="work-technologies">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>Javascript</li>
+              </ol>
+
+              <div class="work-links">
+                <a href="https://chimerical-tanuki-df4d3a.netlify.app" target="_blank" rel="noopener" class="link">Live</a>
+
+                <a href="https://github.com/Jayy0906/Personal-Blog-CRUD-Operations" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/personal-blog.webp" alt="Blog" />
+            </picture>
+          </div>
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <h3 class="h3">Sneh Management Consultancy</h3>
+              <p class="work-text">
+                Empowering Success, One Solution at a Time!</p>
+
+              <ol class="work-technologies">
+                <li>Wordpress</li>
+              </ol>
+
+              <div class="work-links">
+                <a href="https://snehmanagement.com" target="_blank" rel="noopener" class="link">Live</a>
+              </div>
+            </div>
+
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/sneh-management.webp" alt="Consultancy" />
+            </picture>
+          </div>
+
+          <section class="skills">
+            <div class="container">
+              <h2 class="h2" id="skills">My Toolkit</h2>
+              <div class="skills-imgs">
+                <!-- <img src="assets/images/skills/react.webp" alt="React" class="skills-img" loading="lazy" title="React"> -->
+                <img src="assets/images/skills/next-js.webp" alt="NextJS" class="skills-img" loading="lazy"
+                  title="NextJS">
+                <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
+                <img src="assets/images/skills/html.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+                <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy"
+                  title="JavaScript">
+                <img src="assets/images/skills/node-js.webp" alt="Node.js" class="skills-img" loading="lazy"
+                  title="JavaScript">
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <section class="recommendations container">
+            <h2 class="h2">Testimonials</h2>
+            <ol class="testimonials cards" tabindex="0">
+              <li class="testimonial card">
+                <blockquote class="testimonial-text">
+                  Jay is a true professional with amazing talent. He is a creative
+                  thinker, has his finger on the pulse of whats to come, and
+                  absolutely one of the quickest and best problem solvers I have
+                  ever met.
+                </blockquote>
+                <figure class="testimonial-author">
+                  <img src="assets/images/testimonials/1.png" alt="Adam Argalye" loading="lazy" />
+                  <figcaption>
+                    <h3 class="testimonial-author-name">Mohit Patel</h3>
+                    <p class="testimonial-author-job">3D content creator @VisCommerce</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="testimonial card">
+                <blockquote class="testimonial-text">
+                  Jay is good developer. He's efficient across a
+                  seriously wide array of technologies, languages, frameworks, and
+                  development approaches. He codes at work and at home, passionately
+                  gleaning and learning from the open source community.
+                </blockquote>
+                <figure class="testimonial-author">
+                  <img src="assets/images/testimonials/1.png" alt="Jigish Patel" loading="lazy" />
+                  <figcaption>
+                    <h3 class="testimonial-author-name">Jigish Patel</h3>
+                    <p class="testimonial-author-job">UI/UX designer @VisCommerce</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="testimonial card">
+                <blockquote class="testimonial-text">
+                  Jay is a talented artist. He is very experienced with various
+                  coding languages and can make any project you are working on look good. He is
+                  easy to work with and is a self starter. I would work with Jay
+                  again.
+                </blockquote>
+                <figure class="testimonial-author">
+                  <img src="assets/images/testimonials/1.png" alt="Vraj Patel Hirsh" loading="lazy" />
+                  <figcaption>
+                    <h3 class="testimonial-author-name">Vraj Patel</h3>
+                    <p class="testimonial-author-job">Head of Digital Marketing @Digicley</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="testimonial card">
+                <blockquote class="testimonial-text">
+                  I have been Jay's project partner in numerous classes and I never
+                  have to worry about him pulling his weight. Whenever we are
+                  required to work in a group, I want Jay on my team. Reliable and
+                  talented.An overall good guy with a passion for his interests.
+                </blockquote>
+                <figure class="testimonial-author">
+                  <img src="assets/images/testimonials/1.png" alt="Rich Harris" loading="lazy" />
+                  <figcaption>
+                    <h3 class="testimonial-author-name">Anonymous</h3>
+                    <p class="testimonial-author-job">Creator of 👍</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+            </ol>
+          </section>
+
+          <section class="contact">
+            <div class="container">
+              <h2 class="h2" id="contact">Send Message</h2>
+              <div class="contact-content">
+                <div class="contact-textbox">
+                  <strong href="#" class="hire-alert">
+                    <span class="indicator"></span>
+                    Available for hire
+                  </strong>
+                  <p class="contact-text">
+                    As a software engineer, I construct web interfaces and design systems with a special love for
+                    accessibility and the performance. I tend to code things from scratch and enjoy bringing ideas to
+                    life.
+                  </p>
+                  <p class="contact-text">
+                    I'm also an open-source developer, and in my spare time, I do digital art 🙌.
+                  </p>
+                  <img src="assets/images/signatures.png" alt="Jay Patel" class="signatures" loading="lazy" />
+                </div>
+
+                <!-- Form -->
+                <form action="/form-handler.php" method="POST" class="contact-form" id="contact-form">
+                  <div class="form-field">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="message">How can I help you?</label>
+                    <textarea name="message" id="message" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-cta">Send</button>
+                </form>
+
+              </div>
+            </div>
+          </section>
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <nav>
+          <ol class="footer-links">
+            <li class="footer-link">
+              <a title="GitHub" href="https://github.com/Jayy0906" target="_blank" rel="noopener"><img loading="lazy"
+                  src="assets/images/social-links/github.svg" alt="GitHub" /></a>
+            </li>
+
+            <li class="footer-link">
+              <a title="Linkedin" href="https://www.linkedin.com/in/jay-patel-5121221b8" target="_blank"
+                rel="noopener"><img loading="lazy" src="assets/images/social-links/linkedin.svg" alt="Linkedin" /></a>
+            </li>
+
+            <li class="footer-link">
+              <a title="Instagram" href="https://www.instagram.com/jayy.0906" target="_blank" rel="noopener"><img
+                  loading="lazy" src="assets/images/social-links/instagram.svg" alt="Instagram" /></a>
+            </li>
+
+            <li class="footer-link">
+              <a title="Twitter" href="https://twitter.com/jayy_0906" target="_blank" rel="noopener"><img loading="lazy"
+                  src="assets/images/social-links/twitter.svg" alt="Twitter" /></a>
+            </li>
+          </ol>
+        </nav>
+        <p class="footer-text">
+          &copy; 2024 - Website designed & developed by <a target="_blank" rel="noopener"
+            href="https://github.com/Jayy0906">Jay Patel.</a>
+        </p>
+        <label class="theme-switch" for="theme-switch">
+          <span>Dark Theme</span>
+          <input type="checkbox" id="theme-switch" role="switch" />
+        </label>
+      </div>
+    </div>
+    <div id="circle" class="circle"></div>
+  </footer>
+  <!-- partial -->
+  <script src='https://unpkg.com/kinet@2.2.1/dist/kinet.min.js'></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: [`Hi I'm Jay patel.`, 'Web Developer.', 'And.', 'Quality Assurance Engineer.'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>
