@@ -149,6 +149,36 @@ kinet.on('end', function() {
   console.log('end');
 });
 
+// const form = document.getElementById("contact-form");
+
+// form.addEventListener("submit", async (e) => {
+//   e.preventDefault();
+
+//   const formData = new FormData(form);
+//   const data = Object.fromEntries(formData);
+
+//   try {
+//     const response = await fetch("mail.php", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify(data),
+//     });
+
+//     if (!response.ok) {
+//       throw new Error("Network response was not ok");
+//     }
+
+//     const result = await response.text();
+//     alert(result); // Show success or error message
+//   } catch (error) {
+//     console.error("Error:", error);
+//     alert("Failed to send message.");
+//   }
+// });
+
+
 // const form = document.getElementById('contact-form');
 // form.addEventListener('submit', async (e) => {
 //   e.preventDefault();

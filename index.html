@@ -176,9 +176,11 @@
               </ol>
 
               <div class="work-links">
-                <a href="https://expense-tracker-reactjs-omega.vercel.app" target="_blank" rel="noopener" class="link">Live</a>
+                <a href="https://expense-tracker-reactjs-omega.vercel.app" target="_blank" rel="noopener"
+                  class="link">Live</a>
 
-                <a href="https://github.com/Jayy0906/Expense-Tracker-reactjs" target="_blank" rel="noopener" title="Source code">
+                <a href="https://github.com/Jayy0906/Expense-Tracker-reactjs" target="_blank" rel="noopener"
+                  title="Source code">
                   <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
                 </a>
               </div>
@@ -203,9 +205,11 @@
               </ol>
 
               <div class="work-links">
-                <a href="https://chimerical-tanuki-df4d3a.netlify.app" target="_blank" rel="noopener" class="link">Live</a>
+                <a href="https://chimerical-tanuki-df4d3a.netlify.app" target="_blank" rel="noopener"
+                  class="link">Live</a>
 
-                <a href="https://github.com/Jayy0906/Personal-Blog-CRUD-Operations" target="_blank" rel="noopener" title="Source code">
+                <a href="https://github.com/Jayy0906/Personal-Blog-CRUD-Operations" target="_blank" rel="noopener"
+                  title="Source code">
                   <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
                 </a>
               </div>
@@ -342,7 +346,7 @@
                 </div>
 
                 <!-- Form -->
-                <form action="/form-handler.php" method="POST" class="contact-form" id="contact-form">
+                <form action="mail.php" method="POST" class="contact-form" id="contact-form">
                   <div class="form-field">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" required />
@@ -354,6 +358,18 @@
                   <div class="form-field">
                     <label for="message">How can I help you?</label>
                     <textarea name="message" id="message" required></textarea>
+                  </div>
+
+                  <!-- Honeypot Field (hidden from users) -->
+                  <div style="display: none;">
+                    <label for="website">Website</label>
+                    <input type="text" name="website" id="website" />
+                  </div>
+
+                  <!-- Simple CAPTCHA -->
+                  <div class="form-field">
+                    <label for="captcha">What is 6 + 2?</label>
+                    <input type="text" name="captcha" id="captcha" required />
                   </div>
                   <button type="submit" class="btn btn-cta">Send</button>
                 </form>
